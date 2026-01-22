@@ -18,6 +18,21 @@ Aplicación construida en java ant con patron de arquitectura MVC e interfáz gr
 🪟 Contenedores (Containers)
 Son los componentes que contienen otros componentes.
 
+```code
+┌──────────────────────────────────────────────┐
+│                panelTop                      │
+│  [ Formulario ] [ Proyectos ]                │
+├──────────────┬───────────────────────────────┤
+│ panelFilters │           Tabla               │
+│  (filtros)   │        (JTable + Scroll)      │
+│              │                               │
+├──────────────┴───────────────────────────────┤
+│                panelBottom                   │
+│     [ resumen pendientes/completadas ]       │
+│     [ botones eliminar / recargar ]           │
+└──────────────────────────────────────────────┘
+```
+
 🔹 JFrame
 Ventana principal de la aplicación.
 Es el contenedor raíz de la interfaz.
